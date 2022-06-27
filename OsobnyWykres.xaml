@@ -1,0 +1,17 @@
+﻿<Window x:Class="Histogram.OsobnyWykres"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:local="clr-namespace:Histogram"
+        Closed="Window_Closed"
+        mc:Ignorable="d"
+        Title="OsobnyWykres" Height="520" Width="1000">
+   
+    <Grid>
+        <lvc:CartesianChart Height="450" Series="{Binding Series}" >
+           
+        </lvc:CartesianChart>
+    </Grid>
+</Window>

@@ -1,0 +1,77 @@
+﻿<Window x:Class="Histogram.OknoWyboruKoloru"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Histogram"
+        mc:Ignorable="d"
+        Title="Kolor" Height="234" Width="263">
+    <Window.Resources>
+        <Style x:Key="MyButtonStyle" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Margin" Value="7"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                        BorderThickness="1"
+                        Padding="4,2" 
+       
+                        CornerRadius="3" 
+                        Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="#1C1D33" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Margin="0,0,-1,0">
+
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#2195f2" />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#f34336" />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#fec007" />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#607d8a" />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#00bbd3" />
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,-1,0">
+
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#e81e63" />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#fe5722" />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#3f51b4" />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#ccdb39" />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#009587" />
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,-1,0">
+
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#4cae50"  />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="MediumPurple"  />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#F57FB8" />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#F53386" />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#A89D3E" />
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,0,-1,0">
+
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#4E57F5" />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#F59367" />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#52A82D" />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#E734F5" />
+                <Button Style="{StaticResource MyButtonStyle}" Height="35" Width="35" Click="Wybranie_Koloru" Background="#1BF5C5" />
+
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+    
+</Window>
