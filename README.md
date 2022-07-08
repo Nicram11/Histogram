@@ -15,7 +15,7 @@ Product Grades are computed from text files (one .txt for one product) formatted
 1;\
 then results of these calculations are displayed on the graph
 
-Program support comparing multiple product grades in one graph. To make it easier there have been added options like hiding/showing choosen product and changing  color assigned to them.
+Program supports comparing multiple product grades in one graph. To make it easier options, for hiding/showing a chosen product and changing the colour assigned to them, have been added.
 
 The results of computing grades can be saved to a text file.
 
